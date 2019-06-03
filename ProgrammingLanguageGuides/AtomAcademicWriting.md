@@ -51,3 +51,5 @@ Possibly in the future use "git-control" package for easier use.
 # Latex
 In order to use Latex commands, use double dollars \$\$. E.g.,  
 $$ y \in R(A) $$
+
+# This is a small change I am testing out
