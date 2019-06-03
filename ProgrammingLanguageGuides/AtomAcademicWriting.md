@@ -78,9 +78,8 @@ This can be done inside Atom.
 ## Staging, adding, committing and others.
 This can all be done internally in Atom so one does not need to know commands. However, if one wants to use the git bash, one can use:
 - Stage all: git add .
+- Need to add more when I feel like it. For now, use Atom.
 
 # Latex
 In order to use Latex commands, use double dollars \$\$. E.g.,  
 $$ y \in R(A) $$
-
-# This is a small change I am testing out
