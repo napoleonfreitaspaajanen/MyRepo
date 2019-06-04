@@ -18,7 +18,7 @@ Note you need to install latex separately and add it to your path.
 
 These are the commands for using pandoc. Call the commands in the terminal.
 
-**pandoc markdownfilename.md -s -o view.pdf**
+**pandoc markdownfilename.md -s -o view.pdf**  
 Creates a pdf called view.pdf from the file markdownfilename.md.  
 Option -s for standalone and option -o for output.  
 Add --toc for table of contents
