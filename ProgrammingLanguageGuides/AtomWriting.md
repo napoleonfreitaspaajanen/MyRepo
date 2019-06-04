@@ -3,9 +3,12 @@ title: Documentation for using Atom and Pandoc
 ---
 # Packages and atom settings
 
+- The command palette can be opened by CTRL+SHIFT+P (called CP from now on)
 - pdf-view allows to see pdfs inside platformio
-- Settings > Editor set tabtype to soft and two spaces
+- Settings > Editor set tabtype to soft and two spaces.
 - Packages > autocomplete plus > autocomplete only on tab (otherwise also completes on enter)
+- To see invisibles, press window: toggle invisibles in CP
+- markdown document outline package is helpful to nagivate quickly. Needs a vertical split though
 
 # Pandoc
 To use Pandoc to convert to pdf, you need the package platformio-ide-terminal.
@@ -95,6 +98,11 @@ This can all be done internally in Atom so one does not need to know commands. H
 # Latex
 In order to use Latex commands, use double dollars \$\$. E.g.,  
 $$ y \in R(A) $$
+
+**Adding a package**  
+In the header, set the following:  
+header-includes: |  
+\\usepackage{amsthm}
 
 # Coding
 
