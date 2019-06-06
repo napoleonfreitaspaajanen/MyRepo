@@ -8,7 +8,7 @@ title: Documentation for using Atom and Pandoc
 - Settings > Editor set tabtype to soft and two spaces.
 - Packages > autocomplete plus > autocomplete only on tab (otherwise also completes on enter)
 - To see invisibles, press window: toggle invisibles in CP
-- markdown document outline package is helpful to nagivate quickly. Needs a vertical split though
+- Markdown document outline package is helpful to nagivate quickly. Needs a vertical split though
 
 # Pandoc
 To use Pandoc to convert to pdf, you need the package platformio-ide-terminal.
