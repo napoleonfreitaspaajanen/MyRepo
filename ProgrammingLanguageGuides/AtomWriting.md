@@ -9,6 +9,7 @@ title: Documentation for using Atom and Pandoc
 - Packages > autocomplete plus > autocomplete only on tab (otherwise also completes on enter)
 - To see invisibles, press window: toggle invisibles in CP
 - Markdown document outline package is helpful to nagivate quickly. Needs a vertical split though
+- vim-mode-plus to get vim into atom
 
 # Pandoc
 To use Pandoc to convert to pdf, you need the package platformio-ide-terminal.
