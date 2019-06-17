@@ -25,7 +25,14 @@ One of  the most prominent OS libraries is the Path from pathlib. Path is used f
   from pathlib import Path
   currentLocation = Path()
   fileLocation = Path().joinpath('data', 'Locations.txt')
-```
+```  
+
+When running a file, Python creates a variable called `__file__`, that can be used to get the files path. Use the command:  
+```python
+filepath = Path(__file__).parent
+```   
+where parent can be used instead of '..'.
+
 # Plotting
 Basic library is matplotlib.pyplot.  
 Another good library is seaborn.
@@ -45,6 +52,7 @@ Create a 3d plot using pyplot
 
 ## Regex
 Some sites:  
+
 - An site for testing your regex: www.regex101.com  
 - Basics of python regex: [basics](https://python.readthedocs.io/en/stable/howto/regex.html#compiling-regular-expressions)  
 
@@ -86,4 +94,23 @@ You can also name the groups. In the previous example:
 
 Remarks:  
 
-- Great example of using groupings is first answer in [this_link](https://stackoverflow.com/questions/47982949/how-to-parse-complex-text-files-using-python/47984221#47984221)
+- Great example of using groupings is first answer in [this_link](https://stackoverflow.com/questions/47982949/how-to-parse-complex-text-files-using-python/47984221#47984221)  
+
+# Pandas  
+Pandas is the main library for data slicing and dicing in Python.  
+
+**read_csv**  
+This is the workhorse of pandas, used to read any text file.  
+
+- To read a string, use io.StringIO(str). This command makes the string into a file-like stream which can be used by functions that take as inputs files.  
+- option `delim_whitespace=True` is the same as `sep=\s+`, i.e., the separator can be any mixture of whitespace/tab combination.  
+- header=None in the case there is no header.  
+- giving dtype explicitly makes the reading faster.
+
+# Concurrent programming  
+Article on the basics: [ConcurrentProgramming_with_Python](https://realpython.com/python-concurrency/)  
+Main libraries are:  
+
+- multiprocessing, uses various processors and thus good for cpu-bound problems  
+- threading, creates many threads on one cpu but no control of changing execution, I/O-bound  
+- asyncio, knows where the program is going, best choice for I/O (more complex than threading)  

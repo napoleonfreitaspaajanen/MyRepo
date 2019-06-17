@@ -79,6 +79,12 @@ Basics of git: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-th
 
 Possibly in the future use "git-control" package for easier use.
 
+Some possible problems that can occur:  
+
+- Windows stores the username/passwords in a place called "Credential manager". Check that they are correct!  
+- To set up SSH, go to git bash and check `~/.ssh`. If you don't have that, you need to create it, easiest probably with ubuntu and and write  `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`. Then you want to copy the public key using `cat ~/.ssh/id_rsa.pub | clip` and paste that to the SSH of the git server. Then you should hopefully be done.
+
+
 **Initialize git**
 
 This can be done inside Atom.
