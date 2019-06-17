@@ -47,6 +47,18 @@ To indent the lists, use a tab:
 - First
   - Second
 
+**Tables**  
+basic table syntax is
+
+| sign | variable |
+| ---  |:--------:|
+|%d| digit |
+
+- `:--:` is for alignment, e.g., that one is for middle  
+
+**Adding links and references**  
+Adding a link can be done line this: [This is a link](https://www.google.com/)
+
 **Small but useful**
 
 To do a single linebreak, use two spaces and enter. To change paragraph, use two enters. A single enter doesn't do anything.
