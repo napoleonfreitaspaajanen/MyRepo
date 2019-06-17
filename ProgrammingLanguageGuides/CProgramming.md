@@ -25,6 +25,11 @@ int multiply(int first, int second){
   return res;
 }
 ```  
+# Built-ins  
+Short explanation of things that are built into the language.  
+- sizeof: Returns the size of a data structure. Especially, one can write sizeof(short) or any other datatype. Note that the return type is size_t, which is equivalent to unsigned int (in printf, lu).  
+
+
 
 # stdio library  
 
@@ -110,11 +115,53 @@ The two basic operators of pointers are `&` and `*`.
 The story is briefly the following:  
 ```c
 #include <stdio.h>
-main(void){
+int main(void){
   int var = 5; // var is a direct reference to 5, i.e., the variable name
-  int `*`p_var = &var; // creates a pointer p_var to the value of var. & yields its address.
-  printf("Get the value of var through pointer: %d", `*`p_var);
+  int * p_var = &var; // creates a pointer p_var to the value of var. & yields its address.
+  printf("Get the value of var through pointer: %d", * p_var);
   // at this point p_var is a pointer, &p_var yields its address, &var is an address, and var represents a integer
-}
+}  
+```  
 
+Here are some examples of what is allowed:  
+```c
+void function(int* argument){} // Takes a pointer argument. If one wants to pass an array, this is also the way.
+aPtr = (bPtr + 2) // assign a new pointer to the old
+*(aPtr + 2) = * bPtr // Set the value behind 2 slots in front of pointer a to the value of pointer b
+
+```
+
+## Connection with arrays  
+The basic syntax for an array:  
+- int a[10]  
+After this, `a` is a pointer to the first location a[0], so we can write for a integer pointer aPtr = a instead of aPtr = &a.  
+Furthermore, * (aPtr + 1) is equal to aPtr[1].  
+The difference between the tru is that aPtr is a variable, so aPtr = a and aPtr++ are legal, whereas a = aPtr and a++ are not.  
+
+A table can also be initialized as follows:
+```c
+short slots[5] = {1 ,5, 3, 5, 6};
+int numbers[] = {2232, 434, 232}; // Number of elements is interpreted  
+int numbers2[10] = {0}; // array of zeros: if less numbers given in curly, rest will be set to zero
+int number3[5]; // This will not contain zeros, it will contain random numbers
+```  
+# Types  
+## Strings  
+Strings are character arrays that end with the character `\0`. Thus we have the following:  
+```c
+char string[] = {'h', 'e', 'l', 'l', 'o'};
+// Is the same than
+char string[] = "hello"
+// Is the same than
+const char *string = "hello" // Note that  const is disnescessary but it will be immutable even without it.
+```
+
+The basic way to go through strings is
+```c
+int function(const char * string){
+  while (*string != '\0'){
+    //do something
+    string++; // set pointer forward
+  }
+}
 ```
