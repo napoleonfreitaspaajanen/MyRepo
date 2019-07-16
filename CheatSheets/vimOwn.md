@@ -22,6 +22,9 @@ set showcmd "shows the incomplete commands"
 filetype plugin indent on "set filetype detection and some changes related to that"
 ```
 
+**Vim plugings**  
+Install vim-plug and follow instructions
+
 **VIM in Atom**  
 - Load the vim-mode-plus package and the keystroke package.
 Atom -> Settings -> Keybindings and write:  
