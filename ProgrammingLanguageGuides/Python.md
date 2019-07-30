@@ -42,6 +42,8 @@ Another good library is seaborn.
 Create a 3d plot using pyplot
 ```python
   import matplotlib.pytplot as plt
+  from mpl_toolkits import mplot3d
+
   fig = figure()
   ax = fig.add_subplot(111, projection='3d')
   ax.scatter(X, Y, Z)
@@ -114,3 +116,12 @@ Main libraries are:
 - multiprocessing, uses various processors and thus good for cpu-bound problems  
 - threading, creates many threads on one cpu but no control of changing execution, I/O-bound  
 - asyncio, knows where the program is going, best choice for I/O (more complex than threading)  
+
+# Functional programming  
+
+## functools  
+
+**partial**  
+allows to create functions that have some arguments given. e.g.,
+f = functools.partia(my_sum, y=10, z=20)  
+will set y and z variables in the function my_sum
