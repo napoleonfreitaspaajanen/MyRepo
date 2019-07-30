@@ -1,7 +1,10 @@
 ---
 title: Documentation for using Atom and Pandoc
 ---
+# Shortkeys  
 
+- `Alt-\` toggles tree view and A, M or delete can be used to add, move or delete files
+- Ctrl-k + Ctrl-arrow allows to focus between different editors
 # Pandoc
 To use Pandoc to convert to pdf, you need the package platformio-ide-terminal.
 This allows to use the terminal inside of Atom. Once installed, it can be called with the command Ctrl-\`.
@@ -13,8 +16,8 @@ Creates a pdf called view.pdf from the file markdownfilename.md.
 Option -s for standalone and option -o for output.  
 Add --toc for table of contents
 
-
 # Markdown
+
 
 ### Beginning a document  
 Between triple lines (---) write the title and author, as follows:  
